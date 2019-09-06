@@ -1,0 +1,15 @@
+// babel config file.
+{
+    "presets": [ // a collection of code transform plugins. which are the pieces of code that apply the actual transformation to our code.
+        ["env", { // we installed babel-preset-env as a package. we select the preset and say that the one we want is env.
+            "targets": { // specify the target.
+                "browsers": [
+                    "last 5 versions",
+                    "ie >= 8"
+                ]
+            }
+        }]
+    ]
+}
+
+// more examples on babel doc.
